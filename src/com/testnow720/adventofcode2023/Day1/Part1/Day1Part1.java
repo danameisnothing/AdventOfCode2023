@@ -40,7 +40,7 @@ public class Day1Part1 {
 		fileReader.close();
 		
 		int total = 0;
-		for (Integer value : nums) {
+		for (int value : nums) {
 			total += value;
 		}
 		

@@ -52,7 +52,7 @@ public class Day1Part2 {
 			for (int i = 0; i < possibleLetterDigits.length; i++) {
 				// make sure they are the same
 				int index = nextLineBuffer.indexOf(possibleLetterDigits[i][0]);
-				int lastIndex = nextLineBuff er.lastIndexOf(possibleLetterDigits[i][0]);
+				int lastIndex = nextLineBuffer.lastIndexOf(possibleLetterDigits[i][0]);
 				if (index != -1 && lastIndex != -1) {
 					// Dirty fix but oh well
 					if (index == lastIndex) {
@@ -86,7 +86,7 @@ public class Day1Part2 {
 		fileReader.close();
 		
 		int total = 0;
-		for (Integer value : nums) {
+		for (int value : nums) {
 			total += value;
 		}
 		
